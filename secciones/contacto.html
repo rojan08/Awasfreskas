@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contacto</title>
+
+</head>
+
+<body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+         
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="promociones.html">Promociones</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    
+    </nav>
+
+    <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Formulario Clientes</h1>
+
+    <Section>
+        <form data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+            <label for="name">Ingrese su nombre</label>
+            <input type="text" name="name" /><br>
+            <label for="email">Ingrese su email</label>
+            <input type="text" placeholder="AwasFreskas@gmail.com" name="email" /><br>
+            <label for="password">Ingrese tu codigo</label>
+            <input name="usuario" type="password" id="password" /><br>
+            <!-- área de texto -->
+            <label for="observaciones">Comentarios: <br>
+                <textarea></textarea>
+            </label> <br>
+            <!-- Menú desplegable -->
+            <div>Seleccione el tamaño.</div>
+            <select name="talles">
+                <option value="S">500 ML</option>
+                <option value="M">1 LT</option>
+                <option value="L">2 LT</option>
+            </select>
+            <!-- Menú Radio -->
+            <div>Selecciona Tu Sabor Favorito</div>
+            <div>Maracuya</div>
+            <input type="radio" name="Color" value="Negro" />
+            <div>Mango</div>
+            <input type="radio" name="Color" value="Blanco" />
+            <div>Horchata</div>
+            <input type="radio" name="Color" value="Rosa" />
+            <div>Jamaica</div>
+            <input type="radio" name="Color" value="Rosa" />
+            <div>Limon con Chia</div>
+            <input type="radio" name="Color" value="Rosa" />
+            <!-- checkbox -->
+            <div>Acepto término y condiciones</div>
+            <input type="checkbox" name="Acepto" /> <br>
+            <!-- Botones -->
+            <input type="submit" value="Enviar Datos" />
+            <input type="reset" value="Limpiar Datos" />
+            <input type="button" value="Non Action" />
+        </form>
+    </SEction>
+
+
+    
+</body>
+</html>

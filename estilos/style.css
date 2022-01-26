@@ -1,0 +1,253 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: red;
+}
+ nav a{
+     color:white;
+     padding: 20px 80px;
+     text-decoration: none;
+     font-size: 25px;
+     border: solid 1px black;
+     background-color: red;
+
+     margin: 10px;
+     padding: 20px;
+ }
+
+ nav a:hover{
+    color:white;
+    padding: 20px 80px;
+    text-decoration: none;
+    font-size: 25px;
+    border: solid 1px black;
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 20px;
+
+
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: yellow;
+    border: blue  5px solid;
+    border-radius: 30px;
+    background-color: red;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: yellow;
+    border: blue  5px solid;
+    border-radius: 30px;
+    background-color: red;
+}
+
+.container { 
+    display: grid;
+    padding: 200px;
+    margin: 100px;
+    grid-template-columns: 238px 260px 271px 267px 7.3fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item1 . item2 . item3"
+      ". item4 . item5 .";
+      
+    background-color: #e6ea1b;
+    background-image: linear-gradient(129deg, #e6ea1b 0%, #f0240e 100%);
+  }
+  
+
+  .item1{
+      grid-area: item1;
+    
+  }
+
+  .item2{
+      grid-area: item2;
+  }
+  
+  .item3{
+      grid-area: item3;
+  }
+
+  .item4{
+      grid-area: item4;
+  }
+  .item5{
+      grid-area: item5;
+  }
+
+
+  .texto-imagen{
+      display: grid;
+      padding: 30px;
+      grid-template-columns: 600px 700px;
+      gap: 15px;
+      grid-template-areas:"texto imagen" ;
+      justify-content: center;
+      
+  }
+
+  .tx1{
+      grid-area: texto;
+      font-size: 60px;
+      text-align: center;
+      background-color: #FFE53B;
+      background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+
+  }
+
+  .tx2{
+      grid-area: imagen;
+ 
+
+  }
+
+  footer{
+      display:grid;
+      background-color: red;
+      color: yellow;
+      height: 80px;
+      border: blue solid 5px;
+      justify-content: center;
+      font-size: 50px;
+  }
+
+  /*nosostros*/
+  .nos{
+      display: flex;
+      font-size: 30px;
+      background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    color: white;
+
+  }
+  .poncho{
+      justify-items: center;
+  }
+
+
+
+
+
+  /*productos*/
+  h3{
+      display: flex;
+      justify-content: center;
+      font-size: 80px;
+      color:blue;
+  }
+
+.container-producto{
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    width: 300px;
+    height: 600px;  
+    margin: 15px 0;
+    align-items: center;
+}
+/*estilo para los productos*/
+.container-producto:hover{
+    border: solid black 1px;
+    width: 300px;
+    height: 600px;
+    box-shadow: 10px 15px grey;  
+}
+
+
+.producto-img{
+    height: 50%;
+    width: 100%;
+}
+
+.productoimg-medida{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+
+
+
+
+
+  @media only screen and (max-width: 480px){
+
+    nav{
+        display: flex;
+        background-color: green;
+    }
+
+    .container{
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(5 1fr);
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
+    }
+    .texto-imagen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "tex1"
+        "tex2";
+    }
+    footer{
+        display: grid;
+        background-color: blue;
+        align-content: center;
+        align-items: center;
+
+    }
+    h2{
+        display: flex;
+    }
+    h1{
+        display: flex;
+
+    }
+
+
+
+
+
+  }
+  
+ 
