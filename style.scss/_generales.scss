@@ -1,0 +1,38 @@
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color:$colorsecu;
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color:$colortxth;
+    border: blue  5px solid;
+    border-radius: 30px;
+    background-color: red;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color:$colortxth;
+    border: blue  4px solid;
+    border-radius: 30px;
+    background-color: red;
+}
+
+
+footer{
+    display:grid;
+    background-color: red;
+    color: yellow;
+    height: 80px;
+    border: blue solid 5px;
+    justify-content: center;
+    font-size: 50px;
+}
