@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../style/exted.scss"
+    ],
+    "names": [],
+    "file": "exted.css"
+}
