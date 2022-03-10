@@ -1,13 +1,65 @@
-
- .nos{
-    display: flex;
+.poncho {
+    display: grid;
     font-size: 30px;
-    background-color: #8BC6EC;
-background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-  color: white;
+    color: $colorprin;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+        .ponchito{
+            border-radius: 60px;
+        }
+        .div2{
+            border: solid 5px $colorprin;
+            padding: 10px;
+        }
+    }
 
-}
-.poncho{
-    justify-items: center;
-}
+    .histo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 9px;
+        grid-row-gap: 8px;
 
+            .hola{
+                    border-radius: 40px;
+                    border: solid 2px $colorprin;
+                
+            }
+            .tem2{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+            }
+            .tem3{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+            }
+            .tem4{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+
+            }
+            .tem5{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+
+            }
+            .tem6{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+
+            }
+            .tem7{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+
+            }
+            .tem8{
+                border-radius: 40px;
+                border: solid 2px $colorprin;
+
+            }
+        }
+
+       

@@ -1,24 +1,28 @@
-@mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
+@mixin caja-articulo {
     display: flex;
-    justify-content: center;
-    color: red;
-    background-color: white;
-    font-size: 80px;
+    font-size: 30px;
+    padding: 15px 15px;
     text-align: center;
+    justify-content: space-around;
+}
 
-   }
-   
+@mixin estilogen($color,$fuent) {
+    display: flex;
+    font-size: $fuent;
+    background-color: $color;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
 
-
-
-
- .box {
-   @include sizes(1920px,500px )
- }
-
- .box2{
-   @include sizes(1920px,500px )
-  }
- 
+@mixin tituloxlado {
+    display: flex;
+    color: #ffffff;
+    font-size: 60px;
+    background-color: #ffb62f;
+    width: 600px;
+    height: 100px;
+    align-items: center;
+    
+    
+}
