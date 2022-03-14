@@ -1,32 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
 body{
     background-color:white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-        .videocorp{
-            display: flex;
-            background-color: #fbef7e;
-        background-image: linear-gradient(335deg, #fbef7e 0%, #d19031 100%);
-            padding: 10px 20px;
-            justify-content: center;
-            height: 100vh;
-            border-radius: 30px;
-                video{
-                    border-radius: 30px;
-                }
-        
-        }
 }
+.img-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(335deg, #fbef7e 0%, #d19031 100%);
+    border-radius: 30px;
+}
+
+
 
   
-.popular{
-    @include caja-articulo();    
+.container-producto{
+    display: flex;
+    flex-direction: column;
+    border: solid 5px $colorsecu;
+    width: 300px;
+    height: 600px;  
+    margin: 25px;
+    align-items: center;
+    color: $colorsecu;
+    font-size: 25px;
+    text-align: center;
+    
 }
-.popular2{
-    @include caja-articulo();
-    background-color: #fbef7e;
-background-image: linear-gradient(335deg, #fbef7e 0%, #d19031 100%);
+/*estilo para los productos*/
+.container-producto:hover{
+    border: solid $colorsecu 1px;
+    width: 300px;
+    height: 600px;
+    box-shadow: 10px 15px $colorsecu;  
+}
+
+
+.producto-img{
+    height: 50%;
+    width: 100%;
+}
+
+.productoimg-medida{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(335deg, #fbef7e 0%, #d19031 100%);
+
+
 }
 
 .distri{ 
@@ -35,15 +68,16 @@ background-image: linear-gradient(335deg, #fbef7e 0%, #d19031 100%);
     grid-template-rows: 1fr;
     grid-column-gap: 12px;
     grid-row-gap: 0px;
-    font-size: 35px;
+    font-size: 3vw;
     color: #d19031;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
     
   }
-  
-  
-    
 
   
-  
+
+
+
+

@@ -16,34 +16,8 @@
             .div3 { grid-area: 2 / 3 / 3 / 4; }
     }
 
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 16px;
-        grid-row-gap: 3px;
-        }
+   
         
-        .div1 { grid-area: 1 / 1 / 2 / 2; }
-        .div2 { grid-area: 1 / 2 / 2 / 3; }
-        .div3 { grid-area: 1 / 3 / 2 / 4; }
-        .div4 { grid-area: 1 / 4 / 2 / 5; }
-        .div5 { grid-area: 1 / 5 / 2 / 6; }
-
-        .tempo{
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 16px;
-            grid-row-gap: 3px;
-            }
-            
-            .div1 { grid-area: 1 / 1 / 2 / 2; }
-            .div2 { grid-area: 1 / 2 / 2 / 3; }
-            .div3 { grid-area: 1 / 3 / 2 / 4; }
-            .div4 { grid-area: 1 / 4 / 2 / 5; }
-            .div5 { grid-area: 1 / 5 / 2 / 6; }
-
             .dispo {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -52,19 +26,7 @@
                 grid-row-gap: 3px;
                 }
 
-                .premium{
-                    display: grid;
-                    grid-template-columns: repeat(5, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    grid-column-gap: 16px;
-                    grid-row-gap: 3px;
-                    }
-                    
-                    .div1 { grid-area: 1 / 1 / 2 / 2; }
-                    .div2 { grid-area: 1 / 2 / 2 / 3; }
-                    .div3 { grid-area: 1 / 3 / 2 / 4; }
-                    .div4 { grid-area: 1 / 4 / 2 / 5; }
-                    .div5 { grid-area: 1 / 5 / 2 / 6; }
+               
         
                     .dispo {
                         display: grid;
@@ -82,5 +44,31 @@
                         
                         }
                 
+                        .container-producto:hover{
+                            border: solid $colorsecu 1px;
+                            width: 300px;
+                            height: 600px;
+                            box-shadow: 10px 15px $colorsecu;  
+                        }
+                        
+                        
+                        .producto-img{
+                            height: 50%;
+                            width: 100%;
+                        }
+                        
+                        .productoimg-medida{
+                            height: 100%;
+                            width: 100%;
+                        }
+                        
+                        .contenedor-principal{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            background-image: linear-gradient(335deg, #fbef7e 0%, #d19031 100%);
+                        
+                        
+                        }
 
 

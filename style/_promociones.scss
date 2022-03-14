@@ -1,11 +1,7 @@
 .promo{
-    font-size: 50px;
+    font-size: 4vw;
     color: $colorprin;
     padding:15px;
-    border-radius: 30px;
-    border: solid 5px $colorprin;
-    height: 500px;
-    width: 800px;
     margin: 15px;
 
 }
@@ -14,20 +10,7 @@
     align-items: center;
     justify-content: end;
 }
-.promo3{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 50px;
-    color: $colorprin;
-    border-radius: 30px;
-    border: solid 5px $colorprin;
-    width: 800px;
-    margin-left: 1080px;
-    padding: 15px;
 
-
-}
 .banner{
     display: flex;
     align-content: stretch;
